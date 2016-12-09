@@ -1,0 +1,28 @@
+.wrapper-md.form.form-horizontal
+  = form_for @available_product, multipart: true, remote: true, authenticity_token: true do |f|
+    .form-group
+      = f.label :product, 'Select a product type', {class: 'col-sm-3 control-label'}
+      .col-md-9
+        = f.fields_for :product do |product|
+          = product.collection_select :id, Product.all, :id, :name, prompt: true
+
+    .form-group
+      = f.label :color, 'Select a color', {class: 'col-sm-3 control-label'}
+      .col-md-9
+        = f.fields_for :color do |color|
+          = color.collection_select :id, Color.all, :id, :name, prompt: true
+
+    .form-group
+      = f.label :size, 'Select a size', {class: 'col-sm-3 control-label'}
+      .col-md-9
+        = f.fields_for :size do |size|
+          = size.collection_select :id, Size.all, :id, :name, prompt: true
+
+    .form-group
+      = f.label :quantity, 'Choose a quantity', {class: 'col-sm-3 control-label'}
+      .col-md-9
+        = f.text_field :quantity, {class: 'col-sm-3 control-label', id: 'qtd'}
+
+    .modal-footer
+      %input.btn.btn-sm.btn-danger{"data-dismiss" => "modal", :type => "button", :value => "Cancelar"}/
+      %input.btn.btn-sm.btn-success{:name => "commit", :type => "submit", :value => "Confirmar"}/

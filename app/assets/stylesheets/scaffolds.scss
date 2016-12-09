@@ -1,0 +1,199 @@
+body {
+  background-color: #003366;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+
+  &:visited {
+    color: #666;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+.dropdown-menu {
+  min-width: 120px;
+}
+
+.w {
+  width: 120px;
+}
+
+dl {
+  margin-bottom: 0px;
+}
+
+.dl-horizontal dt {
+  width: 118px;
+}
+
+.dl-horizontal dd {
+  margin-left: 130px;
+}
+
+.page-header {
+  padding-bottom: 2px;
+  margin: 6px 0 8px;
+}
+
+.page-header h3 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.linkuni14 {
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+option:disabled {
+  color: #00F;
+}
+
+.breadcrumb li:last-child {
+  color: #777;
+}
+
+/*table{
+  font-size: 14px;
+}*/
+
+a{
+  color: #58666E;
+}
+
+.ui-widget-content{
+  z-index: 9999999999 !important;;
+}
+
+.alert-error {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+ }
+
+.alert-alert {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+ }
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+ }
+
+.alert-notice {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+ }
+
+.label {
+    text-shadow: 0px 0px 0px;
+    color: #58666E;
+    font-size: 100%;
+    font-weight: normal;
+    white-space: normal;
+}
+
+.list-group-item {
+  margin-bottom: 0px;
+}
+
+.ch:hover,
+.ch:focus {
+  color: #555;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+
+a.ch:hover,
+a.ch:focus {
+  color: #555;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+
+a.color-black {
+  color: black;
+}
+
+/*.container-fluid {
+  //workaround para aquele espaço em branco que aparece com a tela 50%. Demanda a parte de mobile abaixo
+  position: absolute;
+  width: 89%;
+  padding-right: 15px;
+}
+@media(max-width: 768px) {
+  .container-fluid {
+    position: relative;
+    width: 100%;
+  }
+}*/
