@@ -15,9 +15,9 @@
         %td= available_product.size.name
         %td= available_product.quantity
         %td
-          = content_tag :a, '', href: available_product, title: 'Details', data: {toggle: 'modal', target: '.waiting-modal'}, class: 'glyphicon glyphicon-plus'
+          = content_tag :a, '', href: available_product_path(id: available_product.id), title: 'Details', data: {toggle: 'modal', target: '.waiting-modal'}, class: 'glyphicon glyphicon-plus'
         %td
-          = content_tag :a, '', href: edit_available_product_path(available_product), title: 'Edit', data: {toggle: 'modal', target: '.waiting-modal'}, class: 'glyphicon glyphicon-pencil'
+          = content_tag :a, '', href: edit_available_product_path(id: available_product.id), title: 'Edit', data: {toggle: 'modal', target: '.waiting-modal'}, class: 'glyphicon glyphicon-pencil'
         %td
-          = content_tag :a, '', href: available_product, title: 'Delete', method: :delete, data: { confirm: 'Are you sure?' }, class: 'glyphicon glyphicon-remove text-danger'
+          = content_tag :a, '', href: destroy_available_product_path(id: available_product.id), title: 'Delete', method: :destroy, data: { confirm: 'Are you sure?' }, class: 'glyphicon glyphicon-remove text-danger'
 %br

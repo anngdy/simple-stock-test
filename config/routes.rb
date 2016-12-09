@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root :to => 'available_products#index'
 
   resources :available_products
+  get '/destroy_available_product', to: 'available_products#destroy'
+  get '/update_available_product', to: 'available_products#update'
   #resources :sizes
   #resources :colors
   #resources :products

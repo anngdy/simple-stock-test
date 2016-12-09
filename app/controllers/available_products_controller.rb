@@ -33,11 +33,6 @@ class AvailableProductsController < ApplicationController
     color = Color.find(params[:color][:id])
     size = Size.find(params[:size][:id])
 
-    puts '********************************************'
-    puts product.inspect
-    puts color.inspect
-    puts size.inspect
-
     params[:product_id] = product ? product.id : nil
     params.delete(:product)
 
@@ -77,16 +72,8 @@ class AvailableProductsController < ApplicationController
 
   def destroy
     @errors = {}
-    res = @available_product.destroy
-    respond_to do |format|
-      format.js {
-        if res && @available_product.errors.blank?
-          flash[:success] = 'Register successfully destroyed!!'
-        else
-          @errors[:alert] = @available_product.errors.full_messages
-        end
-      }
-    end
+    res = @available_product.destroy!
+    flash[:info] = 'Register successfully destroyed!!'
   end
 
   private
